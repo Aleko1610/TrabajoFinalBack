@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.portfolio.anic.Interface.InterfacePersonaService;
 
 @RestController
-@CrossOrigin(origins = "https://frontendnic-9cb63.web.app")
+@CrossOrigin (origins = "https://frontendnic-9cb63.web.app")
 public class ControllerPersona {
     @Autowired InterfacePersonaService ipersonaService;
     

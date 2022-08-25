@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.portfolio.anic.Controller;
 
 import com.portfolio.anic.Dto.dtoExperiencia;
@@ -25,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/explab")
-@CrossOrigin(origins = "https://frontendnic-9cb63.web.app")
+@CrossOrigin (origins = "https://frontendnic-9cb63.web.app")
 public class ControllerExperiencia {
     @Autowired
     ServiceExperiencia servExperiencia;
