@@ -17,33 +17,33 @@ import com.portfolio.anic.Repository.RepoEducacion;
 @Transactional
 public class ServiceEducacion {
     @Autowired
-    RepoEducacion rEducacion;
+    RepoEducacion repoEducacion;
     
     public List<Educacion> list(){
-        return rEducacion.findAll();
+        return repoEducacion.findAll();
     }
     
     public Optional<Educacion> getOne(int id){
-        return rEducacion.findById(id);
+        return repoEducacion.findById(id);
     }
     
     public Optional<Educacion> getByNmbreE(String nombreE){
-        return rEducacion.findByNombreE(nombreE);
+        return repoEducacion.findByNombreE(nombreE);
     }
     
     public void save(Educacion educacion){
-        rEducacion.save(educacion);
+        repoEducacion.save(educacion);
     }
     
     public void delete(int id){
-        rEducacion.deleteById(id);
+        repoEducacion.deleteById(id);
     }
     
     public boolean existsById(int id){
-        return rEducacion.existsById(id);
+        return repoEducacion.existsById(id);
     }
     
     public boolean existsByNombreE(String nombreE){
-        return rEducacion.existsByNombreE(nombreE);
+        return repoEducacion.existsByNombreE(nombreE);
     }
 }
