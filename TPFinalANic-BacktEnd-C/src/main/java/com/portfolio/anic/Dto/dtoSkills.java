@@ -7,13 +7,16 @@ public class dtoSkills {
     private String nombreS;
     @NotBlank
     private String descripcionS;
+    @NotBlank
+    private String porcentajeS;
 
     public dtoSkills() {
     }
 
-    public dtoSkills(String nombreS, String descripcionS) {
+    public dtoSkills(String nombreS, String descripcionS, String porcentajeS) {
         this.nombreS = nombreS;
         this.descripcionS = descripcionS;
+        this.porcentajeS = porcentajeS;
     }
 
     public String getNombreS() {
@@ -32,5 +35,11 @@ public class dtoSkills {
         this.descripcionS = descripcionS;
     }
     
-    
+        public String getPorcentajeS() {
+        return porcentajeS;
+    }
+
+    public void setPorcentajeS(String porcentajeS) {
+        this.porcentajeS = porcentajeS;
+    }
 }

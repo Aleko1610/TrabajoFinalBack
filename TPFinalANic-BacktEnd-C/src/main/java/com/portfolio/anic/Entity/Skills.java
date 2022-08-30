@@ -12,15 +12,17 @@ public class Skills {
     private int id;
     private String nombreS;
     private String descripcionS;
+    private String porcentajeS;
     
     //Constructores
 
     public Skills() {
     }
 
-    public Skills(String nombreS, String descripcionS) {
+    public Skills(String nombreS, String descripcionS, String porcentajeS) {
         this.nombreS = nombreS;
         this.descripcionS = descripcionS;
+        this.porcentajeS = porcentajeS;
     }
     
     //Getters and setters
@@ -49,4 +51,11 @@ public class Skills {
         this.descripcionS = descripcionS;
     }
     
+        public String getPorcentajeS() {
+        return porcentajeS;
+    }
+
+    public void setPorcentajeS(String porcentajeS) {
+        this.porcentajeS = porcentajeS;
+    }
 }
